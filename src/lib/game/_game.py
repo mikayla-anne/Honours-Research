@@ -25,6 +25,7 @@ class Agent:
         raise NotImplementedError
 
     def learn(self, states, player_id):
+        print('in')
         """Optional function. In the special case that the agent has an
         evaluation function that it is actively learning, this
         function exists as a way of 'retrospectively' learning.
@@ -47,12 +48,15 @@ class Game:
             self.screen = pygame.display.set_mode((672, 480))
 
     def run(self, play_again='query', speed=2):
+        # print('in run')
+        # t
         while True:
             self._run_round(speed)
             if not play_again or play_again == 'query' and not self._play_again():
                 break
 
     def _run_round(self, speed):
+        
         state = self.game_type.init(self.agents)
         states = [state]
         i = -1
@@ -66,14 +70,18 @@ class Game:
         else:
             turn_wait = 500
             round_wait = 1000
+
         while not state.is_terminal:
             new_state = None
             i = (i + 1) % len(self.agents)
+            print('i' , i)
             while new_state == None:
                 start_t = int(round(time.time() * 1000))
                 agent = self.agents[i]
-                action = agent.decide(state)
-                new_state = state.act(action)
+                action = agent.decide(state)  # minimax / opponent goes here
+                print('ACTION' , action)
+                print('act in game')
+                new_state = state.act(action)  # implement chosen action
                 if not new_state:
                     print("Invalid action performed!")
             self._draw_state(new_state)
@@ -84,6 +92,7 @@ class Game:
             state = new_state
             end_t = int(round(time.time() * 1000))
             wait_time = turn_wait - (end_t - start_t)
+            print('wait time' , wait_time)
             # while True:
             #     pygame.event.clear()
             #     event = pygame.event.wait()
@@ -93,6 +102,7 @@ class Game:
             if wait_time > 0 and self.display:
                 pygame.time.wait(wait_time)
         for player_id, agent in enumerate(self.agents):
+            print('for ' , player_id)
             agent.learn(states, player_id)
         pygame.time.wait(round_wait)
 

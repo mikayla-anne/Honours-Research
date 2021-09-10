@@ -69,6 +69,8 @@ place chip: 1,2,3,4,5,6,7
         agents = [minimax_agent, minimax_agent]
 
     game = Game(gm.generator(), agents)
+    # print(game)
+    # g
     game.run(play_again='query', speed=2 if args.interactive else 0)
 
 

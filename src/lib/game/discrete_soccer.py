@@ -38,6 +38,7 @@ class InteractiveAgent(Agent):
         self.evaluate = evaluation_function
 
     def decide(self, state):
+        print('i decide')
         if self.evaluate:
             self.evaluate(state, state.current_player, True)
         while True:
@@ -45,24 +46,34 @@ class InteractiveAgent(Agent):
             event = pygame.event.wait()
             if event.type == pygame.KEYDOWN:
                 if event.key in [ pygame.K_w ]:
+                    print('up')
                     return Action.move(0, 1)
                 if event.key in [ pygame.K_x ]:
+                    print(('down'))
                     return Action.move(0, -1)
                 if event.key in [ pygame.K_a ]:
+                    print('left')
                     return Action.move(-1, 0)
                 if event.key in [ pygame.K_d ]:
+                    print('right')
                     return Action.move(1, 0)
                 if event.key in [ pygame.K_q ]:
+                    print('up left')
                     return Action.move(-1, 1)
                 if event.key in [ pygame.K_e ]:
+                    print('up right')
                     return Action.move(1, 1)
                 if event.key in [ pygame.K_z ]:
+                    print('down left')
                     return Action.move(-1, -1)
                 if event.key in [ pygame.K_c ]:
+                    print('down right')
                     return Action.move(1, -1)
                 if event.key in [ pygame.K_s ]:
+                    print('stance')
                     return Action.CHANGE_STANCE
                 if event.key == pygame.K_SPACE:
+                    print('kick')
                     return Action.KICK
 
 
@@ -83,10 +94,23 @@ class generator(GameType):
             has_ball=False,
             stance=0
         ) for i, agent in enumerate(agents)])
+        # print(players)
+        # print(players[0].team)
+        # print(players[0].x)
+        # print(players[0].y)
+
+        # print(players[1].team)
+        # print(players[1].x)
+        # print(players[1].y)
+
+        
         teams = m(
             red=v(*[p.index for p in players if p.team == Team.RED]),
             blue=v(*[p.index for p in players if p.team == Team.BLUE])
-        )
+         )
+        # print(teams.red)
+        # print(teams.red[0])
+        # print(teams.blue)
         ball = m(
             type='ball',
             on_field=True,
@@ -106,6 +130,9 @@ class generator(GameType):
             pitch=pitch,
             winner=None
         )
+
+        # print(state)
+        # t
         state = state._update_reset(random_pos=self.random_pos)
         return state
 
@@ -178,6 +205,8 @@ class SoccerState(GameState):
             )
         elif isinstance(action, tuple) and action[0] == Action.MOVE:
             (_, dx, dy) = action
+            # print(dx,dy)
+            
             state = self._update_move_to(player.x + dx, player.y + dy)
         else:
             return None
