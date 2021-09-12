@@ -52,7 +52,7 @@ class Game:
     def run(self, play_again='query', speed=2):
         print('in run')
 
-        num_games = 5
+        num_games = 1000
 
         csv_save = open('testing.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
@@ -60,28 +60,33 @@ class Game:
         blue_score = 0
         red_score = 0
 
+        writer.writerow(['start time',time.time()]) 
         writer.writerow(['type', 'MM'])
         writer.writerow(['depth', '5'])
         
         # t
-        for l in range(0,5): # num of games
+        for l in range(0,num_games): # num of games
+            
             writer.writerow(['game',l]) 
             
             #print('in while' , l)
             #print('play again' , play_again)
-            iterats, game_winner = self._run_round(speed)
+            iterats, game_winner,times_actions = self._run_round(speed)
             writer.writerow(['iterations', iterats])
+            writer.writerow(['times of actions', times_actions])
 
             print(game_winner)
-
-            if game_winner == 'Team.RED':
+            
+            if game_winner == 1:
+                print('red')
                 writer.writerow(['winner', 'red'])
                 red_score+=1
-            elif game_winner == 'Team.BLUE':
+            elif game_winner == 2:
                 writer.writerow(['winner', 'blue'])
                 blue_score += 1
             else:
                 writer.writerow(['winner', 'none'])
+            
 
             #self._play_again()
 
@@ -92,6 +97,7 @@ class Game:
         
         writer.writerow(['blue games won', blue_score])
         writer.writerow(['red games won', red_score])
+        writer.writerow(['end time', time.time()])
         csv_save.close()
 
     def _run_round(self, speed):
@@ -123,7 +129,7 @@ class Game:
                 st = time.time()
                 action = agent.decide(state)  # minimax / opponent goes here
                 en = time.time()
-                print("time = " , en-st)
+                times_act.append([i,en-st])
                 print('ACTION' , action)
                 print('act in game')
                 new_state = state.act(action)  # implement chosen action
@@ -155,9 +161,9 @@ class Game:
             print('for ' , player_id)
             agent.learn(states, player_id)
         pygame.time.wait(round_wait)
-
         
-        return num_iter,state.winner
+        print(times_act)
+        return num_iter,state.winner,times_act
 
     def _draw_state(self, state):
         if self.display:
