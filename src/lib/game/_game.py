@@ -56,22 +56,42 @@ class Game:
 
         csv_save = open('testing.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
-        
-        writer.writerow(['games',4])
+
+        blue_score = 0
+        red_score = 0
+
+        writer.writerow(['type', 'MM'])
+        writer.writerow(['depth', '5'])
         
         # t
         for l in range(0,5): # num of games
             writer.writerow(['game',l]) 
-            writer.writerow(['type', 'MM'])
+            
             #print('in while' , l)
             #print('play again' , play_again)
-            self._run_round(speed)
+            iterats, game_winner = self._run_round(speed)
+            writer.writerow(['iterations', iterats])
+
+            print(game_winner)
+
+            if game_winner == 'Team.RED':
+                writer.writerow(['winner', 'red'])
+                red_score+=1
+            elif game_winner == 'Team.BLUE':
+                writer.writerow(['winner', 'blue'])
+                blue_score += 1
+            else:
+                writer.writerow(['winner', 'none'])
 
             #self._play_again()
+
+
             
             # if not play_again or play_again == 'query' and not :
             #     break
         
+        writer.writerow(['blue games won', blue_score])
+        writer.writerow(['red games won', red_score])
         csv_save.close()
 
     def _run_round(self, speed):
@@ -90,6 +110,9 @@ class Game:
             turn_wait = 500
             round_wait = 1000
 
+
+        times_act = []
+        num_iter = 0
         while not state.is_terminal:
             new_state = None
             i = (i + 1) % len(self.agents)
@@ -97,7 +120,10 @@ class Game:
             while new_state == None:
                 start_t = int(round(time.time() * 1000))
                 agent = self.agents[i]
+                st = time.time()
                 action = agent.decide(state)  # minimax / opponent goes here
+                en = time.time()
+                print("time = " , en-st)
                 print('ACTION' , action)
                 print('act in game')
                 new_state = state.act(action)  # implement chosen action
@@ -120,10 +146,18 @@ class Game:
             #             break
             if wait_time > 0 and self.display:
                 pygame.time.wait(wait_time)
+
+            num_iter += 1
+
+        
+            
         for player_id, agent in enumerate(self.agents):
             print('for ' , player_id)
             agent.learn(states, player_id)
         pygame.time.wait(round_wait)
+
+        
+        return num_iter,state.winner
 
     def _draw_state(self, state):
         if self.display:
