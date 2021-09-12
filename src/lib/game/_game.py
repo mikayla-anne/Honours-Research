@@ -5,6 +5,8 @@ import pygame
 ## immutable game states
 from pyrsistent import m, v, pmap, PRecord
 import time
+import csv
+
 
 
 class Agent:
@@ -48,12 +50,29 @@ class Game:
             self.screen = pygame.display.set_mode((672, 480))
 
     def run(self, play_again='query', speed=2):
-        # print('in run')
+        print('in run')
+
+        num_games = 5
+
+        csv_save = open('testing.csv', 'w', encoding='UTF8', newline='')
+        writer = csv.writer(csv_save)
+        
+        writer.writerow(['games',4])
+        
         # t
-        while True:
+        for l in range(0,5): # num of games
+            writer.writerow(['game',l]) 
+            writer.writerow(['type', 'MM'])
+            #print('in while' , l)
+            #print('play again' , play_again)
             self._run_round(speed)
-            if not play_again or play_again == 'query' and not self._play_again():
-                break
+
+            #self._play_again()
+            
+            # if not play_again or play_again == 'query' and not :
+            #     break
+        
+        csv_save.close()
 
     def _run_round(self, speed):
         

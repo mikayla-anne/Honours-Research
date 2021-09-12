@@ -53,6 +53,7 @@ class MinimaxAgent(RandomAgent):
 
         if not self.alpha_beta_pruning:
             return self.minimax(state)
+
         else:
             return self.minimax_with_ab_pruning(state)
 
@@ -73,7 +74,7 @@ class MinimaxAgent(RandomAgent):
                 # print(new_state)
                 score = self.min_value(new_state, state.current_player)
                 # score = self.evaluate(state.act(action), state.current_player)
-                print(str(action) + ": " + str(score))
+                #print(str(action) + ": " + str(score))
                 if score > best_score:
                     best_action = action
                     best_score = score

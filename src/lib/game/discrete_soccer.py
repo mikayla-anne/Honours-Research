@@ -171,6 +171,8 @@ class SoccerState(GameState):
             Action.move(0, 1), Action.move(0, -1)
         ]
 
+
+        # i think this is diagonal moves
         if player.x <= 1:
             dx = 1
         elif player.x >= self.pitch.width:
@@ -349,12 +351,14 @@ class SoccerState(GameState):
 
     def player_in_red_penalty_area(self, player_id):
         """Returns true if the player_id is in the Red penalty area."""
+        print('IN RED PENALTY AREA !!!!!!!!!!!!')
         player = self.players[player_id]
         return player.x >= self.pitch.width-3 and\
             self.goal_bottom-1 <= player.y and player.y <= self.goal_top+1
 
     def player_in_blue_penalty_area(self, player_id):
-        """Returns true if the player_id is in the Blue penalty area."""
+        """Returns true if the player_id is in the Blue penalty area."""        
+        print('IN BLUE PENALTY AREA !!!!!!!!!!!!')
         player = self.players[player_id]
         return player.x <= 3 and\
             self.goal_bottom-1 <= player.y and player.y <= self.goal_top+1
