@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
+from os import stat
 from pyrsistent import PMap
+import numpy as np
+from collections import defaultdict
 
 from src.lib.game.discrete_soccer import Action
 from ...lib.game import Agent, RandomAgent, GameState
@@ -26,6 +29,7 @@ class MinimaxAgent(RandomAgent):
     def __init__(self, evaluate_function, alpha_beta_pruning=False, max_depth=5):
         super().__init__()
         self.evaluate = evaluate_function
+        print('EVAL FUNCTION\n',evaluate_function)
         self.alpha_beta_pruning = alpha_beta_pruning
         self.max_depth = max_depth
 
@@ -113,6 +117,7 @@ class MinimaxAgent(RandomAgent):
             return state.reward(player) + self.evaluate(state, player)
         # If we reached the max search depth, return the utility
         if depth >= self.max_depth:
+            # print('EVAL SP\n', self.evaluate(state,player))
             return self.evaluate(state, player)
 
         smallest_score = float("inf")
@@ -171,3 +176,103 @@ class MinimaxAgent(RandomAgent):
                     #print(spaces + "Alpha: " + str(alpha))
 
         return biggest_score
+
+class OpponentLearning(Agent):
+    def __init__(self, evaluate_function,num_episodes,learning_rate,discount_factor):
+        super().__init__()
+        self.evaluate = evaluate_function
+        self.episodes = num_episodes
+        self.learning_rate = learning_rate
+        self.discount_factor = discount_factor
+        
+        self.Q = defaultdict(lambda: np.zeros(7))
+        self.N = defaultdict(float)
+        self.C = defaultdict(float)
+
+        self.me = 0
+        self.opponent = 1
+
+    def decide(self, state):
+
+        self.me = state.current_player.index
+        self.opponent = self.me + 1 % 2
+
+        p1_act = state.actions()
+        act_vals = np.zeros(p1_act)
+        for i, a1 in enumerate(p1_act):
+            temp_next_state = state.act(a1)
+            p2_act = state.actions()
+            if temp_next_state is not None:
+                for a2 in p2_act:
+                    act_vals[i] += (self.C[state,a2]/self.N[state])*self.Q[state,a1,a2]
+
+        a_m = p1_act[np.argmax(act_vals)]
+        next_state = state.act(a_m)
+
+        while True:
+            if state.is_terminal:
+                break 
+            
+            a_o = self.opponent.decide(next_state)
+            r = state.reward(self.me) + self.evaluate(state, self.me)
+
+            nextnext_state = next_state.act(a_o)
+            p1_act = nextnext_state.actions()
+            act_vals = np.zeros(p1_act)
+            for i, a1 in enumerate(p1_act):
+                temp_next_state = nextnext_state.act(a1)
+                p2_act = nextnext_state.actions()
+                if temp_next_state is not None:
+                    for a2 in p2_act:
+                        act_vals[i] += (self.C[nextnext_state,a2]/self.N[nextnext_state])*self.Q[nextnext_state,a1,a2]
+            
+            V_ns = max(act_vals)
+
+            self.Q[state,a_m,a_o] = (1- self.learning_rate)*self.Q[state,a_m,a_o]+ self.learning_rate*(r+ self.discount_factor*V_ns)
+            self.C[state,a_o] += 1
+            self.N[state] += 1
+
+            next_state = state
+            
+
+
+
+
+        a_o = 0 #change to get next move
+
+        next_state = state.act(a_m)
+        p1_act = next_state.actions()
+        act_vals = np.zeros(p1_act)
+        for i, a1 in enumerate(p1_act):
+            temp_next_state = next_state.act(a1)
+            p2_act = next_state.actions()
+            if temp_next_state is not None:
+                for a2 in p2_act:
+                    act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
+        
+        V_ns = p1_act[np.argmax(act_vals)]
+
+        self.Q[state,a_m,a_o] = (1 - self.learning_rate)*self.Q[state,a_m,a_o] + self.learning_rate*(state.reward(self.me) + self.evaluate(next_state, self.me) + self.discount_factor*V_ns)
+        self.C[state,a_o] += 1
+        self.N[state] += 1
+
+
+
+
+
+
+        
+
+        print(state.players)
+        
+
+        return 0
+
+   
+
+
+
+
+
+
+

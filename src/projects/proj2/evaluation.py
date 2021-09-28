@@ -8,6 +8,7 @@ from ...lib.game import discrete_soccer, connect_four, GameState
 
 def soccer(state: GameState, player_id):
     # TODO: Implement this function!
+    # print('in eval func !!!!!!!')
     score = 0
     player1 = state.players[player_id]
     #print("player1.x: " + str(player1.x))
