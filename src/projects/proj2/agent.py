@@ -29,15 +29,15 @@ class MinimaxAgent(RandomAgent):
     def __init__(self, evaluate_function, alpha_beta_pruning=False, max_depth=5):
         super().__init__()
         self.evaluate = evaluate_function
-        print('EVAL FUNCTION\n',evaluate_function)
+        # print('EVAL FUNCTION\n',evaluate_function)
         self.alpha_beta_pruning = alpha_beta_pruning
         self.max_depth = max_depth
 
     def decide(self, state: GameState):
-        if state is None:
-            print("STATE IS NONE")
-        else:
-            print("state is fine")
+        # if state is None:
+        #     print("STATE IS NONE")
+        # else:
+        #     print("state is fine")
         # TODO: Implement this agent!
         #
         # Read the documentation in /src/lib/game/_game.py for
@@ -54,6 +54,9 @@ class MinimaxAgent(RandomAgent):
         #
         # If you would like to see some example agents, check out
         # `/src/lib/game/_agents.py`.
+
+        # print(state.players)
+        # print('\nCURRENT PLAYER LAST ACTION   ', state.players[state.current_player].last_action)
 
         if not self.alpha_beta_pruning:
             return self.minimax(state)
@@ -94,10 +97,10 @@ class MinimaxAgent(RandomAgent):
             new_state = state.act(action)
             if new_state is not None:
                 # print(new_state)
-                print(str(action))
+                # print(str(action))
                 score = self.min_value(new_state, state.current_player, pruning=True, alpha=best_score, beta=float("inf"))
                 # score = self.evaluate(state.act(action), state.current_player)
-                print(str(action) + ": " + str(score))
+                # print(str(action) + ": " + str(score))
                 if score > best_score:
                     best_action = action
                     best_score = score
@@ -178,84 +181,155 @@ class MinimaxAgent(RandomAgent):
         return biggest_score
 
 class OpponentLearning(Agent):
-    def __init__(self, evaluate_function,num_episodes,learning_rate,discount_factor):
+    def __init__(self, evaluate_function,learning_rate,discount_factor):
         super().__init__()
         self.evaluate = evaluate_function
-        self.episodes = num_episodes
         self.learning_rate = learning_rate
         self.discount_factor = discount_factor
         
-        self.Q = defaultdict(lambda: np.zeros(7))
+        self.Q = defaultdict(float)
         self.N = defaultdict(float)
         self.C = defaultdict(float)
+
+        self.last_state = None
 
         self.me = 0
         self.opponent = 1
 
     def decide(self, state):
 
-        self.me = state.current_player.index
+        #print(state.current_player)
+        self.me = state.current_player
         self.opponent = self.me + 1 % 2
+        Q = self.Q
+        C = self.C
+        N = self.N
 
-        p1_act = state.actions()
-        act_vals = np.zeros(p1_act)
-        for i, a1 in enumerate(p1_act):
-            temp_next_state = state.act(a1)
-            p2_act = state.actions()
-            if temp_next_state is not None:
-                for a2 in p2_act:
-                    act_vals[i] += (self.C[state,a2]/self.N[state])*self.Q[state,a1,a2]
-
-        a_m = p1_act[np.argmax(act_vals)]
-        next_state = state.act(a_m)
-
-        while True:
-            if state.is_terminal:
-                break 
-            
-            a_o = self.opponent.decide(next_state)
-            r = state.reward(self.me) + self.evaluate(state, self.me)
-
-            nextnext_state = next_state.act(a_o)
-            p1_act = nextnext_state.actions()
-            act_vals = np.zeros(p1_act)
-            for i, a1 in enumerate(p1_act):
-                temp_next_state = nextnext_state.act(a1)
-                p2_act = nextnext_state.actions()
-                if temp_next_state is not None:
-                    for a2 in p2_act:
-                        act_vals[i] += (self.C[nextnext_state,a2]/self.N[nextnext_state])*self.Q[nextnext_state,a1,a2]
-            
-            V_ns = max(act_vals)
-
-            self.Q[state,a_m,a_o] = (1- self.learning_rate)*self.Q[state,a_m,a_o]+ self.learning_rate*(r+ self.discount_factor*V_ns)
-            self.C[state,a_o] += 1
-            self.N[state] += 1
-
-            next_state = state
-            
-
-
-
-
-        a_o = 0 #change to get next move
-
-        next_state = state.act(a_m)
-        p1_act = next_state.actions()
-        act_vals = np.zeros(p1_act)
-        for i, a1 in enumerate(p1_act):
-            temp_next_state = next_state.act(a1)
-            p2_act = next_state.actions()
-            if temp_next_state is not None:
-                for a2 in p2_act:
-                    act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
-        
-        V_ns = p1_act[np.argmax(act_vals)]
-
-        self.Q[state,a_m,a_o] = (1 - self.learning_rate)*self.Q[state,a_m,a_o] + self.learning_rate*(state.reward(self.me) + self.evaluate(next_state, self.me) + self.discount_factor*V_ns)
-        self.C[state,a_o] += 1
+        # print("\nQ:  " , Q)
+        # print("\nC:  " , C)
+        # print("\nN:  " , N)
         self.N[state] += 1
 
+        last_act_o = state.players[self.opponent].last_action
+        last_act_m = state.players[self.me].last_action
+        prev_state = self.last_state
+        next_state = state
+
+        # print('state  ' , prev_state)
+        # print('lm  ' , last_act_m)
+        # print('lo' , last_act_o)
+        #print('thingy  ',(1- self.learning_rate)*self.Q[prev_state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
+        
+
+        if last_act_o is not None and last_act_m is not None:
+            p1_act = next_state.get_valid_actions
+            # print(len(p1_act))
+            act_vals = np.zeros(len(p1_act))
+            for i, a1 in enumerate(p1_act):
+                temp_next_state = next_state.act(a1)
+                p2_act = next_state.get_valid_actions
+                if temp_next_state is not None:
+                    for a2 in p2_act:
+                        act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
+
+            V_ns = max(act_vals)
+
+            r = self.evaluate(next_state, self.me)
+
+            if state.is_terminal:
+                r += next_state.reward(self.me)
+
+            # print('state  ' , prev_state)
+            # print('lm  ' , last_act_m)
+            # print('lo' , last_act_o)
+            # print('thingy  ',(1- self.learning_rate)*self.Q[prev_state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
+            
+            print(self.Q[prev_state,last_act_m,last_act_o])
+            self.Q[prev_state,last_act_m,last_act_o] = (1- self.learning_rate)*self.Q[prev_state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns)
+            print(self.Q[prev_state,last_act_m,last_act_o])
+            self.C[prev_state,last_act_o] += 1
+            
+            
+        
+        p1_act = state.get_valid_actions
+        # print(len(p1_act))
+        act_vals = np.zeros(len(p1_act))
+        for i, a1 in enumerate(p1_act):
+            temp_next_state = state.act(a1)
+            p2_act = state.get_valid_actions
+            if temp_next_state is not None:
+                for a2 in p2_act:
+                    #print('C   ' , self.C[(next_state,a2)])
+                    act_vals[i] += (self.C[state,a2]/self.N[state])*self.Q[state,a1,a2]
+
+        print(p1_act)
+        print(act_vals)
+        print('index ' ,np.argmax(act_vals))
+        a_m = p1_act[np.random.choice(np.flatnonzero(act_vals == act_vals.max()))]
+        self.last_state = state
+
+        return a_m
+
+
+        # p1_act = state.actions()
+        # act_vals = np.zeros(p1_act)
+        # for i, a1 in enumerate(p1_act):
+        #     temp_next_state = state.act(a1)
+        #     p2_act = state.actions()
+        #     if temp_next_state is not None:
+        #         for a2 in p2_act:
+        #             act_vals[i] += (self.C[state,a2]/self.N[state])*self.Q[state,a1,a2]
+
+        # a_m = p1_act[np.argmax(act_vals)]
+        # next_state = state.act(a_m)
+
+        # while True:
+        #     if state.is_terminal:
+        #         break 
+            
+        #     a_o = self.opponent.decide(next_state)
+        #     r = state.reward(self.me) + self.evaluate(state, self.me)
+
+        #     nextnext_state = next_state.act(a_o)
+        #     p1_act = nextnext_state.actions()
+        #     act_vals = np.zeros(p1_act)
+        #     for i, a1 in enumerate(p1_act):
+        #         temp_next_state = nextnext_state.act(a1)
+        #         p2_act = nextnext_state.actions()
+        #         if temp_next_state is not None:
+        #             for a2 in p2_act:
+        #                 act_vals[i] += (self.C[nextnext_state,a2]/self.N[nextnext_state])*self.Q[nextnext_state,a1,a2]
+            
+        #     V_ns = max(act_vals)
+
+        #     self.Q[state,a_m,a_o] = (1- self.learning_rate)*self.Q[state,a_m,a_o]+ self.learning_rate*(r+ self.discount_factor*V_ns)
+        #     self.C[state,a_o] += 1
+        #     self.N[state] += 1
+
+        #     next_state = state
+            
+
+
+
+
+        # a_o = 0 #change to get next move
+
+        # next_state = state.act(a_m)
+        # p1_act = next_state.actions()
+        # act_vals = np.zeros(p1_act)
+        # for i, a1 in enumerate(p1_act):
+        #     temp_next_state = next_state.act(a1)
+        #     p2_act = next_state.actions()
+        #     if temp_next_state is not None:
+        #         for a2 in p2_act:
+        #             act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
+        
+        # V_ns = p1_act[np.argmax(act_vals)]
+
+        # self.Q[state,a_m,a_o] = (1 - self.learning_rate)*self.Q[state,a_m,a_o] + self.learning_rate*(state.reward(self.me) + self.evaluate(next_state, self.me) + self.discount_factor*V_ns)
+        # self.C[state,a_o] += 1
+        # self.N[state] += 1
+
 
 
 
@@ -263,10 +337,9 @@ class OpponentLearning(Agent):
 
         
 
-        print(state.players)
+        # print(state.players)
         
 
-        return 0
 
    
 

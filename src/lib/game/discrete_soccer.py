@@ -38,7 +38,7 @@ class InteractiveAgent(Agent):
         self.evaluate = evaluation_function
 
     def decide(self, state):
-        print('i decide')
+        # print('i decide')
         if self.evaluate:
             self.evaluate(state, state.current_player, True)
         while True:
@@ -78,7 +78,7 @@ class InteractiveAgent(Agent):
 
 
 class generator(GameType):
-    def __init__(self, field_width=19, field_height=13, goal_height=5, random_pos=True):
+    def __init__(self, field_width=10, field_height=10, goal_height=2, random_pos=True):
         self.field_width = field_width
         self.field_height = field_height
         self.goal_height = goal_height
@@ -92,7 +92,8 @@ class generator(GameType):
             team=Team.RED if i % 2 == 0 else Team.BLUE,
             x=0, y=0,
             has_ball=False,
-            stance=0
+            stance=0,
+            last_action = None
         ) for i, agent in enumerate(agents)])
         # print(players)
         # print(players[0].team)
@@ -173,22 +174,80 @@ class SoccerState(GameState):
 
 
         # i think this is diagonal moves
-        if player.x <= 1:
-            dx = 1
-        elif player.x >= self.pitch.width:
-            dx = -1
-        else:
-            dx = 1 if player.team == Team.RED else -1
+        # if player.x <= 1:
+        #     dx = 1
+        # elif player.x >= self.pitch.width:
+        #     dx = -1
+        # else:
+        #     dx = 1 if player.team == Team.RED else -1
 
-        actions += [
-            Action.move(dx, 1), Action.move(dx, -1)
-        ]
+        # actions += [
+        #     Action.move(dx, 1), Action.move(dx, -1)
+        # ]
         return actions
+
+
+    @property
+    def get_valid_actions(self):
+        player = self.current_player_obj
+        actions = self.actions
+
+        # print('PLAYER COORDS  ', (player.x, player.y))
+
+        if player.x <= 1:
+            actions.remove(Action.move(-1, 0))
+            if Action.move(-1, 0) in actions:
+                actions.remove(Action.move(-1, 1))
+        if player.x == self.pitch.width:
+            actions.remove(Action.move(1, 0))
+            if Action.move(1, 1) in actions:
+                actions.remove(Action.move(1, 1))
+        if player.y <= 1:
+            actions.remove(Action.move(0, -1))
+            if Action.move(1, -1) in actions:
+                actions.remove(Action.move(1, -1))
+        if player.y == self.pitch.height:
+            actions.remove(Action.move(0, 1))
+            if Action.move(1, 1) in actions:
+                actions.remove(Action.move(1, 1))
+
+        # print('ACTIONS  ' , actions)
+
+        return actions
+
+         
 
     def reward(self, player_id):
         if not self.is_terminal:
             return None
         return 10 if self.winner == self.players[player_id].team else -10
+
+    def update_last_actions(self,action):
+
+        player = self.current_player_obj
+        state = self
+
+        state = state.transform(
+            ('players', player.index, 'last_action'), action
+        )
+
+        return state
+
+        # print('before   ',self.current_player_obj)
+        # player = player.remove('last_action')
+        # self.current_player_obj = player.set('last_action' , action)
+        # print('\nafter   ',self.current_player_obj)
+        # t
+        
+
+        # print(self.current_player_obj)
+        # print(self.current_player_id)
+        # print('before   ',player)
+        # print('\nduring  ',player.update({'last_action': action}))
+        # print('\nafter   ',player)
+        # player= player.update(
+        #     {'last_action': action})
+
 
     def act(self, action):
         player = self.current_player_obj
@@ -196,7 +255,7 @@ class SoccerState(GameState):
 
         state = state._action_is_valid(action)
         if not state:
-            return None
+            return None  
 
         if action == Action.KICK:
             state = self._update_kick()

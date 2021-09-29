@@ -50,11 +50,11 @@ class Game:
             self.screen = pygame.display.set_mode((672, 480))
 
     def run(self, play_again='query', speed=2):
-        print('in run')
+        # print('in run')
 
         num_games = 1000
 
-        csv_save = open('t.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('idk.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
@@ -122,17 +122,20 @@ class Game:
         while not state.is_terminal:
             new_state = None
             i = (i + 1) % len(self.agents)
-            print('i' , i)
+            # print('i' , i)
             while new_state == None:
                 start_t = int(round(time.time() * 1000))
                 agent = self.agents[i]
                 st = time.time()
                 action = agent.decide(state)  # minimax / opponent goes here
                 en = time.time()
-                times_act.append([i,en-st])
-                print('ACTION' , action)
-                print('act in game')
+                times_act.append([i,en-st, action])
+                print('coords  ' , (state.players[i].x,state.players[i].y))
+                print(i , 'ACTION' , action)
+                # print('act in game')
+                state = state.update_last_actions(action)
                 new_state = state.act(action)  # implement chosen action
+                
                 if not new_state:
                     print("Invalid action performed!")
             self._draw_state(new_state)
@@ -143,7 +146,7 @@ class Game:
             state = new_state
             end_t = int(round(time.time() * 1000))
             wait_time = turn_wait - (end_t - start_t)
-            print('wait time' , wait_time)
+            # print('wait time' , wait_time)
             # while True:
             #     pygame.event.clear()
             #     event = pygame.event.wait()
@@ -162,7 +165,7 @@ class Game:
             agent.learn(states, player_id)
         pygame.time.wait(round_wait)
         
-        print(times_act)
+        # print(times_act)
         return num_iter,state.winner,times_act
 
     def _draw_state(self, state):

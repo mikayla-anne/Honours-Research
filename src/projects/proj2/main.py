@@ -38,40 +38,21 @@ def run_game(args):
         args.ab_pruning,
         args.max_depth
     )
-    if args.interactive:
-        interactive_agent = gm.InteractiveAgent()
-        if cli.ask_yn("Will you play as the first player?"):
-            agents = [interactive_agent, minimax_agent]
-            if args.game == 'discrete_soccer':
-                print("You will be playing on the RED team!")
-            elif args.game == 'connect_four':
-                print("You will be placing RED chips!")
-        else:
-            agents = [minimax_agent, interactive_agent]
-            if args.game == 'discrete_soccer':
-                print("You will be playing on the BLUE team!")
-            elif args.game == 'connect_four':
-                print("You will be placing BLACK chips!")
-        print()
-        if args.game == 'discrete_soccer':
-            print("""Controls:
-move: q w e
-      a   d
-      z x c
 
-kick: space
-""")
-        elif args.game == 'connect_four':
-            print("""Controls:
-place chip: 1,2,3,4,5,6,7
-""")
+    opponentlearning_agent = agent.OpponentLearning(
+        evaluation_fn,
+        learning_rate=0.5,
+        discount_factor=0.5
+    )
+    if args.minimini:
+        agents = [minimax_agent,minimax_agent]
     else:
-        agents = [minimax_agent, minimax_agent]
+        agents = [opponentlearning_agent, minimax_agent]
 
     game = Game(gm.generator(), agents)
     # print(game)
     # g
-    game.run(play_again='query', speed=2 if args.interactive else 0)
+    game.run(play_again='query', speed=2)
 
 
 def main(cl_args):
@@ -82,7 +63,7 @@ def main(cl_args):
     parser.add_argument('--ab_pruning', action='store_true', help='If included, use alpha-beta pruning.')
     parser.add_argument('--game', type=str, default='discrete_soccer', \
                         help='Game to play. (default: discrete_soccer)\n Options: discrete_soccer, connect_four')
-    parser.add_argument('--interactive', action='store_true', default=False, \
+    parser.add_argument('--minimini', action='store_true', default=False, \
                         help='If included, a human player will be able to join the game.')
 
     args = parser.parse_args(cl_args)
