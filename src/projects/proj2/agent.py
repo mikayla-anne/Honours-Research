@@ -264,8 +264,10 @@ class OpponentLearning(Agent):
 
         print(p1_act)
         print(act_vals)
-        print('index ' ,np.argmax(act_vals))
-        a_m = p1_act[np.random.choice(np.flatnonzero(act_vals == act_vals.max()))]
+        
+        rand_i = np.random.choice(np.flatnonzero(act_vals == act_vals.max()))
+        print('index ' ,rand_i)
+        a_m = p1_act[rand_i]
         self.last_state = state
 
         return a_m

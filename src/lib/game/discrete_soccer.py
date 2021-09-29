@@ -78,7 +78,7 @@ class InteractiveAgent(Agent):
 
 
 class generator(GameType):
-    def __init__(self, field_width=10, field_height=10, goal_height=2, random_pos=True):
+    def __init__(self, field_width=5, field_height=5, goal_height=1, random_pos=True):
         self.field_width = field_width
         self.field_height = field_height
         self.goal_height = goal_height
