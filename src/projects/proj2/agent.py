@@ -191,7 +191,7 @@ class OpponentLearning(Agent):
         self.N = defaultdict(float)
         self.C = defaultdict(float)
 
-        self.last_state = None
+        # self.last_state = None
 
         self.me = 0
         self.opponent = 1
@@ -212,8 +212,8 @@ class OpponentLearning(Agent):
 
         last_act_o = state.players[self.opponent].last_action
         last_act_m = state.players[self.me].last_action
-        prev_state = self.last_state
-        next_state = state
+        # prev_state = self.last_state
+        # next_state = state
 
         # print('state  ' , prev_state)
         # print('lm  ' , last_act_m)
@@ -222,13 +222,13 @@ class OpponentLearning(Agent):
         
 
         if last_act_o is not None and last_act_m is not None:
-            p1_act = next_state.get_valid_actions
+            p1_act = state.get_valid_actions
             # print(len(p1_act))
             act_vals = np.zeros(len(p1_act))
             for i, a1 in enumerate(p1_act):
-                temp_next_state = next_state.act(a1)
+                next_state = state.act(a1)
                 p2_act = next_state.get_valid_actions
-                if temp_next_state is not None:
+                if next_state is not None:
                     for a2 in p2_act:
                         act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
 
@@ -236,7 +236,7 @@ class OpponentLearning(Agent):
 
             r = self.evaluate(next_state, self.me)
 
-            if state.is_terminal:
+            if next_state.is_terminal:
                 r += next_state.reward(self.me)
 
             # print('state  ' , prev_state)
@@ -244,10 +244,10 @@ class OpponentLearning(Agent):
             # print('lo' , last_act_o)
             # print('thingy  ',(1- self.learning_rate)*self.Q[prev_state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
             
-            print(self.Q[prev_state,last_act_m,last_act_o])
-            self.Q[prev_state,last_act_m,last_act_o] = (1- self.learning_rate)*self.Q[prev_state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns)
-            print(self.Q[prev_state,last_act_m,last_act_o])
-            self.C[prev_state,last_act_o] += 1
+            print(self.Q[state,last_act_m,last_act_o])
+            self.Q[state,last_act_m,last_act_o] = (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns)
+            print(self.Q[state,last_act_m,last_act_o])
+            self.C[state,last_act_o] += 1
             
             
         
@@ -268,7 +268,7 @@ class OpponentLearning(Agent):
         rand_i = np.random.choice(np.flatnonzero(act_vals == act_vals.max()))
         print('index ' ,rand_i)
         a_m = p1_act[rand_i]
-        self.last_state = state
+        # self.last_state = state
 
         return a_m
 

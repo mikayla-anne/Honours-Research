@@ -78,7 +78,7 @@ class InteractiveAgent(Agent):
 
 
 class generator(GameType):
-    def __init__(self, field_width=5, field_height=5, goal_height=1, random_pos=True):
+    def __init__(self, field_width=6, field_height=6, goal_height=2, random_pos=True):
         self.field_width = field_width
         self.field_height = field_height
         self.goal_height = goal_height
@@ -196,7 +196,7 @@ class SoccerState(GameState):
 
         if player.x <= 1:
             actions.remove(Action.move(-1, 0))
-            if Action.move(-1, 0) in actions:
+            if Action.move(-1, 1) in actions:
                 actions.remove(Action.move(-1, 1))
         if player.x == self.pitch.width:
             actions.remove(Action.move(1, 0))

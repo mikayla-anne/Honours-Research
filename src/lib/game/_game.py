@@ -6,6 +6,7 @@ import pygame
 from pyrsistent import m, v, pmap, PRecord
 import time
 import csv
+import numpy as np
 
 
 
@@ -52,9 +53,9 @@ class Game:
     def run(self, play_again='query', speed=2):
         # print('in run')
 
-        num_games = 10000
+        num_games = 1000
 
-        csv_save = open('10000runs.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('1000runsMM.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
@@ -104,7 +105,7 @@ class Game:
         
         state = self.game_type.init(self.agents)
         states = [state]
-        i = -1
+        i = np.random.choice([0,1])
         self._draw_state(state)
         if speed == 2:
             turn_wait = 0
