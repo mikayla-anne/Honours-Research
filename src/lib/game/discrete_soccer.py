@@ -174,16 +174,16 @@ class SoccerState(GameState):
 
 
         # i think this is diagonal moves
-        # if player.x <= 1:
-        #     dx = 1
-        # elif player.x >= self.pitch.width:
-        #     dx = -1
-        # else:
-        #     dx = 1 if player.team == Team.RED else -1
+        if player.x <= 1:
+            dx = 1
+        elif player.x >= self.pitch.width:
+            dx = -1
+        else:
+            dx = 1 if player.team == Team.RED else -1
 
-        # actions += [
-        #     Action.move(dx, 1), Action.move(dx, -1)
-        # ]
+        actions += [
+            Action.move(dx, 1), Action.move(dx, -1)
+        ]
         return actions
 
 
@@ -267,9 +267,11 @@ class SoccerState(GameState):
         elif isinstance(action, tuple) and action[0] == Action.MOVE:
             (_, dx, dy) = action
             # print(dx,dy)
-            
+            # print('move action' , (player.x + dx, player.y + dy))
+
             state = self._update_move_to(player.x + dx, player.y + dy)
         else:
+            # print('none actions ' ,  action)
             return None
 
         if state:

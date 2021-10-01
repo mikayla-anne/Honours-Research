@@ -200,7 +200,10 @@ class OpponentLearning(Agent):
 
         #print(state.current_player)
         self.me = state.current_player
-        self.opponent = self.me + 1 % 2
+        print('me  ' , self.me)
+        self.opponent = (self.me + 1) % 2
+        print('oppo   ' ,self.opponent)
+
         Q = self.Q
         C = self.C
         N = self.N
@@ -210,6 +213,7 @@ class OpponentLearning(Agent):
         # print("\nN:  " , N)
         self.N[state] += 1
 
+        print(state.players[self.opponent])
         last_act_o = state.players[self.opponent].last_action
         last_act_m = state.players[self.me].last_action
         # prev_state = self.last_state
@@ -226,13 +230,22 @@ class OpponentLearning(Agent):
             # print(len(p1_act))
             act_vals = np.zeros(len(p1_act))
             for i, a1 in enumerate(p1_act):
+                # print('action casuning problem  ' , a1)
                 next_state = state.act(a1)
+                if next_state is None:
+                    p1_act.remove(a1)
+                    act_vals = np.delete(act_vals, i)
+                    continue
                 p2_act = next_state.get_valid_actions
                 if next_state is not None:
                     for a2 in p2_act:
-                        act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
+                        if self.N[next_state] != 0:
+                            act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
 
             V_ns = max(act_vals)
+            rand_o = np.random.choice(np.flatnonzero(act_vals == act_vals.max()))
+            a_m = p1_act[rand_o]
+            next_state = state.act(a_m)
 
             r = self.evaluate(next_state, self.me)
 

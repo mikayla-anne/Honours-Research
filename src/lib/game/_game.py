@@ -55,7 +55,7 @@ class Game:
 
         num_games = 1000
 
-        csv_save = open('1000runsMM.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('1000runsOMallmovesEvaRe.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
