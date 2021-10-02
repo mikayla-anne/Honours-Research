@@ -53,7 +53,7 @@ class Game:
     def run(self, play_again='query', speed=2):
         # print('in run')
 
-        num_games = 1000
+        num_games = 5000
 
         csv_save = open('1000runsOMallmovesEvaRe2.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
@@ -61,32 +61,32 @@ class Game:
         blue_score = 0
         red_score = 0
 
-        writer.writerow(['start time',time.time()]) 
-        writer.writerow(['type', 'MM'])
-        writer.writerow(['depth', '5'])
+        #writer.writerow(['start time',time.time()]) 
+        #writer.writerow(['type', 'MM'])
+        #writer.writerow(['depth', '5'])
         
         # t
         for l in range(0,num_games): # num of games
             
-            writer.writerow(['game',l]) 
+            #writer.writerow(['game',l]) 
             
             #print('in while' , l)
             #print('play again' , play_again)
             iterats, game_winner,times_actions = self._run_round(speed)
-            writer.writerow(['iterations', iterats])
-            writer.writerow(['times of actions', times_actions])
+            #writer.writerow(['iterations', iterats])
+            #writer.writerow(['times of actions', times_actions])
 
             print(game_winner)
             
             if game_winner == 1:
                 print('red')
-                writer.writerow(['winner', 'red'])
+                writer.writerow('1')
                 red_score+=1
             elif game_winner == 2:
-                writer.writerow(['winner', 'blue'])
+                writer.writerow('0')
                 blue_score += 1
             else:
-                writer.writerow(['winner', 'none'])
+                writer.writerow('-1')
             
 
             #self._play_again()
@@ -96,9 +96,9 @@ class Game:
             # if not play_again or play_again == 'query' and not :
             #     break
         
-        writer.writerow(['blue games won', blue_score])
-        writer.writerow(['red games won', red_score])
-        writer.writerow(['end time', time.time()])
+        # writer.writerow(['blue games won', blue_score])
+        # writer.writerow(['red games won', red_score])
+        # writer.writerow(['end time', time.time()])
         csv_save.close()
 
     def _run_round(self, speed):

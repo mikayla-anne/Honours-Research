@@ -255,10 +255,10 @@ class OpponentLearning(Agent):
 
             
             print(self.Q[state,last_act_m,last_act_o])
-            if next_state.is_terminal:
-                self.Q[state,last_act_m,last_act_o] = 0
-            else:
-                self.Q[state,last_act_m,last_act_o] = (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns)
+            # if next_state.is_terminal:
+            #     self.Q[state,last_act_m,last_act_o] = 0
+            # else:
+            self.Q[state,last_act_m,last_act_o] = (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns)
             print(self.Q[state,last_act_m,last_act_o])
             self.C[state,last_act_o] += 1
             
