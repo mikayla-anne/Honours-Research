@@ -55,38 +55,38 @@ class Game:
 
         num_games = 5000
 
-        csv_save = open('1000runsOMallmovesEvaRe2.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('5000runsOMallmovesEvaRe.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
         red_score = 0
 
-        #writer.writerow(['start time',time.time()]) 
-        #writer.writerow(['type', 'MM'])
-        #writer.writerow(['depth', '5'])
+        # writer.writerow(['start time',time.time()]) 
+        # writer.writerow(['type', 'MM'])
+        # writer.writerow(['depth', '5'])
         
         # t
         for l in range(0,num_games): # num of games
             
-            #writer.writerow(['game',l]) 
+            writer.writerow(['game',l]) 
             
             #print('in while' , l)
             #print('play again' , play_again)
             iterats, game_winner,times_actions = self._run_round(speed)
-            #writer.writerow(['iterations', iterats])
+            # writer.writerow(['iterations', iterats])
             #writer.writerow(['times of actions', times_actions])
 
             print(game_winner)
             
             if game_winner == 1:
                 print('red')
-                writer.writerow('1')
+                writer.writerow(['winner', '1'])
                 red_score+=1
             elif game_winner == 2:
-                writer.writerow('0')
+                writer.writerow(['winner', '0'])
                 blue_score += 1
             else:
-                writer.writerow('-1')
+                writer.writerow(['winner', '-1'])
             
 
             #self._play_again()
