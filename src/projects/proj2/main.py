@@ -45,8 +45,10 @@ def run_game(args):
         discount_factor=0.5
     )
     if args.minimini:
+        print('minimini')
         agents = [minimax_agent,minimax_agent]
     else:
+        print('om mini')
         agents = [opponentlearning_agent, minimax_agent]
 
     game = Game(gm.generator(), agents)
