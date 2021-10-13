@@ -55,7 +55,7 @@ class Game:
 
         num_games = 5000
 
-        csv_save = open('5000runsMMallmovesEvaRe.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('5000runsOMallmovesReFixed.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
@@ -69,6 +69,7 @@ class Game:
         for l in range(0,num_games): # num of games
             
             writer.writerow(['game',l]) 
+            print('game ' , l)
             
             #print('in while' , l)
             #print('play again' , play_again)
@@ -127,6 +128,9 @@ class Game:
             while new_state == None:
                 start_t = int(round(time.time() * 1000))
                 agent = self.agents[i]
+                print('\ni    ')
+                print(agent)
+                print('\n')
                 st = time.time()
                 action = agent.decide(state)  # minimax / opponent goes here
                 en = time.time()
@@ -140,6 +144,7 @@ class Game:
                 if not new_state:
                     print("Invalid action performed!")
             self._draw_state(new_state)
+            print('current player   ' , new_state.current_player)
             if new_state in states:
                 print("State has been repeated! Therefore, game is over.")
                 break

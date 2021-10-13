@@ -187,7 +187,7 @@ class OpponentLearning(Agent):
         self.learning_rate = learning_rate
         self.discount_factor = discount_factor
         
-        self.Q = defaultdict(float)
+        self.Q = defaultdict(lambda: np.random.uniform(0,1))
         self.N = defaultdict(float)
         self.C = defaultdict(float)
 
@@ -199,10 +199,10 @@ class OpponentLearning(Agent):
     def decide(self, state):
 
         #print(state.current_player)
-        self.me = state.current_player
-        print('me  ' , self.me)
-        self.opponent = (self.me + 1) % 2
-        print('oppo   ' ,self.opponent)
+        # self.me = state.current_player
+        # print('me  ' , self.me)
+        # self.opponent = (self.me + 1) % 2
+        # print('oppo   ' ,self.opponent)
 
         Q = self.Q
         C = self.C
@@ -247,10 +247,12 @@ class OpponentLearning(Agent):
             a_m = p1_act[rand_o]
             next_state = state.act(a_m)
 
-            r = self.evaluate(next_state, self.me)
+            r = next_state.reward(self.me)
+            
+            # self.evaluate(next_state, self.me)
 
-            if next_state.is_terminal:
-                r += next_state.reward(self.me)
+            # if next_state.is_terminal:
+            #     r += next_state.reward(self.me)
 
 
             
