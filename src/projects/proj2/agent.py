@@ -247,12 +247,12 @@ class OpponentLearning(Agent):
             a_m = p1_act[rand_o]
             next_state = state.act(a_m)
 
-            r = next_state.reward(self.me)
+           # r = next_state.reward(self.me)
             
-            # self.evaluate(next_state, self.me)
+            r = self.evaluate(next_state, self.me)
 
-            # if next_state.is_terminal:
-            #     r += next_state.reward(self.me)
+            if next_state.is_terminal:
+                r += next_state.reward(self.me)
 
 
             
