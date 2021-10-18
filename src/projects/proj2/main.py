@@ -42,7 +42,17 @@ def run_game(args):
     opponentlearning_agent = agent.OpponentLearning(
         evaluation_fn,
         learning_rate=0.5,
-        discount_factor=0.5
+        discount_factor=0.5,
+        me = 0,
+        opp = 1
+    )
+
+    opponentlearning_agent2 = agent.OpponentLearning(
+        evaluation_fn,
+        learning_rate=0.5,
+        discount_factor=0.5,
+        me = 1,
+        opp = 0
     )
     if args.minimini:
         print('minimini')

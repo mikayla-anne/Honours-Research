@@ -55,7 +55,7 @@ class Game:
 
         num_games = 5000
 
-        csv_save = open('5000runsOMallmovesEvaReFixed3.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('testingstuffisworking2.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
@@ -121,6 +121,9 @@ class Game:
 
         times_act = []
         num_iter = 0
+
+        last_act_o = None
+        last_act_m = None
         while not state.is_terminal:
             new_state = None
             i = (i + 1) % len(self.agents)
@@ -128,23 +131,30 @@ class Game:
             while new_state == None:
                 start_t = int(round(time.time() * 1000))
                 agent = self.agents[i]
-                print('\ni    ')
-                print(agent)
-                print('\n')
+                print("player  " , i)
                 st = time.time()
-                action = agent.decide(state)  # minimax / opponent goes here
+                action = agent.decide(state,last_act_m,last_act_o)  # minimax / opponent goes here
+                # print("current action  " , action)
+                # print('')
+                # print("me last action " , last_act_m)
+                # print("opp last action  " , last_act_o)
+
                 en = time.time()
                 times_act.append([i,en-st, action])
-                print('coords  ' , (state.players[i].x,state.players[i].y))
-                print(i , 'ACTION' , action)
+                # print('coords  ' , (state.players[i].x,state.players[i].y))
+                # print(i , 'ACTION' , action)
                 # print('act in game')
-                state = state.update_last_actions(action)
+                # state = state.update_last_actions(action)
+                if i == 0:
+                    last_act_m = action
+                elif i == 1:
+                    last_act_o = action
                 new_state = state.act(action)  # implement chosen action
                 
                 if not new_state:
                     print("Invalid action performed!")
             self._draw_state(new_state)
-            print('current player   ' , new_state.current_player)
+            # print('current player   ' , new_state.current_player)
             if new_state in states:
                 print("State has been repeated! Therefore, game is over.")
                 break

@@ -92,8 +92,9 @@ class generator(GameType):
             team=Team.RED if i % 2 == 0 else Team.BLUE,
             x=0, y=0,
             has_ball=False,
-            stance=0,
-            last_action = None
+            stance=0
+            # stance=0 ,
+            # last_action = None
         ) for i, agent in enumerate(agents)])
         # print(players)
         # print(players[0].team)
@@ -172,44 +173,86 @@ class SoccerState(GameState):
             Action.move(0, 1), Action.move(0, -1)
         ]
 
+        if player.x < 1:
+            actions.remove(Action.move(-1, 0))
+        if player.x == self.pitch.width:
+            actions.remove(Action.move(1, 0))
+        if player.y <= 1:
+            actions.remove(Action.move(0, -1))
+        if player.y == self.pitch.height:
+            actions.remove(Action.move(0, 1))
 
         # i think this is diagonal moves
-        if player.x <= 1:
-            dx = 1
-        elif player.x >= self.pitch.width:
-            dx = -1
-        else:
-            dx = 1 if player.team == Team.RED else -1
+        # if player.x <= 1:
+        #     dx = 1
+        # elif player.x >= self.pitch.width:
+        #     dx = -1
+        # else:
+        #     dx = 1 if player.team == Team.RED else -1
 
-        actions += [
-            Action.move(dx, 1), Action.move(dx, -1)
-        ]
+        # actions += [
+        #     Action.move(dx, 1), Action.move(dx, -1)
+        # ]
         return actions
 
-
     @property
-    def get_valid_actions(self):
+    def acts(self):
         player = self.current_player_obj
-        actions = self.actions
+        # print('pl in act  ' , player)
+        actions = []
+        if player.has_ball:
+            actions += [Action.KICK]
+        # actions += [Action.CHANGE_STANCE]
+        dx = 1 if player.team == Team.RED else -1
+        actions += [
+            Action.move(1, 0), Action.move(-1, 0),
+            Action.move(0, 1), Action.move(0, -1)
+        ]
+
+        if player.x < 1:
+            actions.remove(Action.move(-1, 0))
+        if player.x == self.pitch.width:
+            actions.remove(Action.move(1, 0))
+        if player.y <= 1:
+            actions.remove(Action.move(0, -1))
+        if player.y == self.pitch.height:
+            actions.remove(Action.move(0, 1))
+
+        # i think this is diagonal moves
+        # if player.x <= 1:
+        #     dx = 1
+        # elif player.x >= self.pitch.width:
+        #     dx = -1
+        # else:
+        #     dx = 1 if player.team == Team.RED else -1
+
+        # actions += [
+        #     Action.move(dx, 1), Action.move(dx, -1)
+        # ]
+        return actions
+    
+    def get_valid_actions(self , player):
+
+        actions = []
+        if player.has_ball:
+            actions += [Action.KICK]
+        # actions += [Action.CHANGE_STANCE]
+
+        actions += [
+            Action.move(1, 0), Action.move(-1, 0),
+            Action.move(0, 1), Action.move(0, -1)
+        ]
 
         # print('PLAYER COORDS  ', (player.x, player.y))
 
-        if player.x <= 1:
+        if player.x < 1:
             actions.remove(Action.move(-1, 0))
-            if Action.move(-1, 1) in actions:
-                actions.remove(Action.move(-1, 1))
         if player.x == self.pitch.width:
             actions.remove(Action.move(1, 0))
-            if Action.move(1, 1) in actions:
-                actions.remove(Action.move(1, 1))
         if player.y <= 1:
             actions.remove(Action.move(0, -1))
-            if Action.move(1, -1) in actions:
-                actions.remove(Action.move(1, -1))
         if player.y == self.pitch.height:
             actions.remove(Action.move(0, 1))
-            if Action.move(1, 1) in actions:
-                actions.remove(Action.move(1, 1))
 
         # print('ACTIONS  ' , actions)
 
