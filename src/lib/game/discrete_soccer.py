@@ -262,7 +262,10 @@ class SoccerState(GameState):
 
     def reward(self, player_id):
         if not self.is_terminal:
+            if self.players[player_id].has_ball:
+                return 1
             return 0
+        
         return 10 if self.winner == self.players[player_id].team else -10
 
     def update_last_actions(self,action):

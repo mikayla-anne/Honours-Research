@@ -55,7 +55,7 @@ class Game:
 
         num_games = 5000
 
-        csv_save = open('testingstuffisworking2.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('removedrepeatstatething.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
@@ -155,8 +155,8 @@ class Game:
                     print("Invalid action performed!")
             self._draw_state(new_state)
             # print('current player   ' , new_state.current_player)
-            if new_state in states:
-                print("State has been repeated! Therefore, game is over.")
+            if states.count(new_state) > 3:
+                print("State has been repeated 3 times! Therefore, game is over.")
                 break
             states += [new_state]
             state = new_state

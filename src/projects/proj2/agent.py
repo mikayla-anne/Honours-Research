@@ -262,9 +262,9 @@ class OpponentLearning(Agent):
                         if self.N[next_state] != 0:
                             act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
 
-            # print('act vals  ' , act_vals)
+            print('act vals  ' , act_vals)
             V_ns = max(act_vals)
-            # print('vns  ' , V_ns)
+            print('vns  ' , V_ns)
             rand_o = np.random.choice(np.flatnonzero(act_vals == act_vals.max()))
             # print('rANDD  '  , rand_o)
             a_m = p1_act[rand_o]
@@ -289,13 +289,13 @@ class OpponentLearning(Agent):
             #     self.Q[state,last_act_m,last_act_o] = 0
             # else:
 
-            # print('t' , (1- self.learning_rate))
-            # print(self.Q[state,last_act_m,last_act_o])
-            # print(self.learning_rate)
-            # print(r)
-            # print(self.discount_factor)
-            # print(V_ns)
-            # print(' Q  , ' , (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
+            print('t' , (1- self.learning_rate))
+            print(self.Q[state,last_act_m,last_act_o])
+            print(self.learning_rate)
+            print(r)
+            print(self.discount_factor)
+            print(V_ns)
+            print(' Q  , ' , (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
             self.Q[state,last_act_m,last_act_o] = (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns)
             # print(self.Q[state,last_act_m,last_act_o])
             self.C[state,last_act_o] += 1
