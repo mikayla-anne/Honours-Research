@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from os import write
 import pygame
 ## We will use persistent data structures because we want fast
 ## immutable game states
@@ -9,6 +10,15 @@ import csv
 import numpy as np
 
 
+csv_save_a = open('acts3.csv', 'w', encoding='UTF8', newline='')
+writer_a = csv.writer(csv_save_a)
+
+csv_save_b = open('check3.csv', 'w', encoding='UTF8', newline='')
+writer_b = csv.writer(csv_save_b)
+
+
+predicted_move = -1
+actual_move = -1
 
 class Agent:
     def __init__(self):
@@ -55,7 +65,7 @@ class Game:
 
         num_games = 5000
 
-        csv_save = open('removedrepeatstatething.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('savingprobs3.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
@@ -69,13 +79,14 @@ class Game:
         for l in range(0,num_games): # num of games
             
             writer.writerow(['game',l]) 
+            writer_b.writerow(['game',l]) 
             print('game ' , l)
             
             #print('in while' , l)
             #print('play again' , play_again)
-            iterats, game_winner,times_actions = self._run_round(speed)
+            iterats, game_winner,times_actions = self._run_round(speed, actual_move, predicted_move)
             # writer.writerow(['iterations', iterats])
-            #writer.writerow(['times of actions', times_actions])
+            # writer.writerow(['times of actions', times_actions])
 
             print(game_winner)
             
@@ -102,7 +113,7 @@ class Game:
         # writer.writerow(['end time', time.time()])
         csv_save.close()
 
-    def _run_round(self, speed):
+    def _run_round(self, speed, actual_move,predicted_move):
         
         state = self.game_type.init(self.agents)
         states = [state]
@@ -131,16 +142,36 @@ class Game:
             while new_state == None:
                 start_t = int(round(time.time() * 1000))
                 agent = self.agents[i]
-                print("player  " , i)
+                # print("player check  " , i)
+                # print('players    ' , state.players)
                 st = time.time()
-                action = agent.decide(state,last_act_m,last_act_o)  # minimax / opponent goes here
+                action , pred = agent.decide(state,last_act_m,last_act_o)  # minimax / opponent goes here
                 # print("current action  " , action)
                 # print('')
                 # print("me last action " , last_act_m)
                 # print("opp last action  " , last_act_o)
 
                 en = time.time()
-                times_act.append([i,en-st, action])
+                # print("player check " , i)
+
+                if i == 1:
+                    # print('in if , ' , i)
+                    writer_a.writerow(['p1 act', action])
+                    actual_move = action
+                    # print(predicted_move)
+                else:
+                    # print('in else , ' , i)
+                    # print('pred' , pred)
+                    writer_a.writerow(['pred' , pred])
+                    # print('act move' , actual_move)
+                    # print('check ' , actual_move == predicted_move)
+                    writer_b.writerow(['check', actual_move == predicted_move])
+                    predicted_move = pred
+                    # print('pred move' , predicted_move)
+
+                    # times_act.append(action)
+
+                
                 # print('coords  ' , (state.players[i].x,state.players[i].y))
                 # print(i , 'ACTION' , action)
                 # print('act in game')
@@ -155,8 +186,8 @@ class Game:
                     print("Invalid action performed!")
             self._draw_state(new_state)
             # print('current player   ' , new_state.current_player)
-            if states.count(new_state) > 3:
-                print("State has been repeated 3 times! Therefore, game is over.")
+            if new_state in states:
+                print("State has been repeated! Therefore, game is over.")
                 break
             states += [new_state]
             state = new_state

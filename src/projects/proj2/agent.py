@@ -7,6 +7,9 @@ from collections import defaultdict
 from src.lib.game.discrete_soccer import Action
 from ...lib.game import Agent, RandomAgent, GameState
 
+import csv
+
+
 
 class MinimaxAgent(RandomAgent):
     """An agent that makes decisions using the Minimax algorithm, using a
@@ -34,7 +37,7 @@ class MinimaxAgent(RandomAgent):
         self.max_depth = max_depth
 
     def decide(self, state: GameState , lm, lo):
-        print('minimax')
+        # print('minimax')
         # if state is None:
         #     print("STATE IS NONE")
         # else:
@@ -60,10 +63,10 @@ class MinimaxAgent(RandomAgent):
         # print('\nCURRENT PLAYER LAST ACTION   ', state.players[state.current_player].last_action)
 
         if not self.alpha_beta_pruning:
-            return self.minimax(state)
+            return self.minimax(state),None
 
         else:
-            return self.minimax_with_ab_pruning(state)
+            return self.minimax_with_ab_pruning(state),None
 
     def minimax(self, state: GameState):
         # This is the suggested method you use to do minimax.  Assume
@@ -197,6 +200,9 @@ class OpponentLearning(Agent):
         self.me = me
         self.opponent = opp
 
+        csv_save = open('om3.csv', 'w', encoding='UTF8', newline='')
+        self.writer = csv.writer(csv_save)
+
     def decide(self, state , last_act_m, last_act_o):
 
         #print(state.current_player)
@@ -212,6 +218,9 @@ class OpponentLearning(Agent):
         Q = self.Q
         C = self.C
         N = self.N
+
+        pred_p = -1
+        pred = None
 
         # print("\nQ:  " , Q)
         # print("\nC:  " , C)
@@ -240,12 +249,16 @@ class OpponentLearning(Agent):
         # print('lo' , last_act_o)
         #print('thingy  ',(1- self.learning_rate)*self.Q[prev_state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
         
+        if last_act_o is None and last_act_m is None:
+            # print("here")
+            self.writer.writerow(['new game' , 'start'])
 
         if last_act_o is not None and last_act_m is not None:
             # print('p0')
             p1_act = state.acts
             # print('p1_act' , p1_act)
             # print(len(p1_act))
+            
             
             act_vals = np.zeros(len(p1_act))
             for i, a1 in enumerate(p1_act):
@@ -260,11 +273,12 @@ class OpponentLearning(Agent):
                 if next_state is not None:
                     for a2 in p2_act:
                         if self.N[next_state] != 0:
-                            act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
+                            p = (self.C[next_state,a2]/self.N[next_state])
+                            act_vals[i] += p*self.Q[next_state,a1,a2]
 
-            print('act vals  ' , act_vals)
+            # print('act vals  ' , act_vals)
             V_ns = max(act_vals)
-            print('vns  ' , V_ns)
+            # print('vns  ' , V_ns)
             rand_o = np.random.choice(np.flatnonzero(act_vals == act_vals.max()))
             # print('rANDD  '  , rand_o)
             a_m = p1_act[rand_o]
@@ -289,13 +303,13 @@ class OpponentLearning(Agent):
             #     self.Q[state,last_act_m,last_act_o] = 0
             # else:
 
-            print('t' , (1- self.learning_rate))
-            print(self.Q[state,last_act_m,last_act_o])
-            print(self.learning_rate)
-            print(r)
-            print(self.discount_factor)
-            print(V_ns)
-            print(' Q  , ' , (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
+            # print('t' , (1- self.learning_rate))
+            # print(self.Q[state,last_act_m,last_act_o])
+            # print(self.learning_rate)
+            # print(r)
+            # print(self.discount_factor)
+            # print(V_ns)
+            # print(' Q  , ' , (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
             self.Q[state,last_act_m,last_act_o] = (1- self.learning_rate)*self.Q[state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns)
             # print(self.Q[state,last_act_m,last_act_o])
             self.C[state,last_act_o] += 1
@@ -317,6 +331,10 @@ class OpponentLearning(Agent):
         # print(p1_act)
         # print(act_vals)
 
+        # print('next opp move   ' , pred , pred_p)
+
+
+
         # print('p0')
         p1_act = state.acts
         # print('p1_act' , p1_act)
@@ -334,14 +352,23 @@ class OpponentLearning(Agent):
             p2_act = next_state.acts
             if next_state is not None:
                 for a2 in p2_act:
+                    # print('in loop a2  ' , N[next_state])
                     if self.N[next_state] != 0:
-                        act_vals[i] += (self.C[next_state,a2]/self.N[next_state])*self.Q[next_state,a1,a2]
+                        p = (self.C[next_state,a2]/self.N[next_state])
+                        if p > pred_p:
+                            pred = a2
+                            pred_p = p
+                        # print('            ******    ' , a2 , p)
+                        act_vals[i] += p*self.Q[next_state,a1,a2]
 
         
         rand_i = np.random.choice(np.flatnonzero(act_vals == act_vals.max()))
         # print('index ' ,rand_i)
         a_m = p1_act[rand_i]
-        # self.last_state = state
+        # self.last_state = state        
+        self.writer.writerow(['last move' , last_act_o])
+
+        self.writer.writerow(['next opp move   ' , pred , pred_p])
 
         # print('')
         # print('end')
@@ -349,7 +376,7 @@ class OpponentLearning(Agent):
         # print('s, op  ' , self.C[state,last_act_o])
         # print('q s me , op' , self.Q[state,last_act_m,last_act_o])
 
-        return a_m
+        return a_m, pred
 
 
         # p1_act = state.actions()
