@@ -10,10 +10,10 @@ import csv
 import numpy as np
 
 
-csv_save_a = open('acts_g3.csv', 'w', encoding='UTF8', newline='')
+csv_save_a = open('acts_g4.csv', 'w', encoding='UTF8', newline='')
 writer_a = csv.writer(csv_save_a)
 
-csv_save_b = open('check_g3.csv', 'w', encoding='UTF8', newline='')
+csv_save_b = open('check_g4.csv', 'w', encoding='UTF8', newline='')
 writer_b = csv.writer(csv_save_b)
 
 
@@ -65,7 +65,7 @@ class Game:
 
         num_games = 5000
 
-        csv_save = open('savingprobsg_g3.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('savingprobsg_g4.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
 
         blue_score = 0
