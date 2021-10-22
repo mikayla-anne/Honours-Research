@@ -10,10 +10,10 @@ import csv
 import numpy as np
 
 
-csv_save_a = open('acts-4.csv', 'w', encoding='UTF8', newline='')
+csv_save_a = open('acts_g1.csv', 'w', encoding='UTF8', newline='')
 writer_a = csv.writer(csv_save_a)
 
-csv_save_b = open('check-4.csv', 'w', encoding='UTF8', newline='')
+csv_save_b = open('check_g1.csv', 'w', encoding='UTF8', newline='')
 writer_b = csv.writer(csv_save_b)
 
 
