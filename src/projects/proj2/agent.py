@@ -200,7 +200,7 @@ class OpponentLearning(Agent):
         self.me = me
         self.opponent = opp
 
-        csv_save = open('om_diff4.csv', 'w', encoding='UTF8', newline='')
+        csv_save = open('om_diff5.csv', 'w', encoding='UTF8', newline='')
         self.writer = csv.writer(csv_save)
 
     def decide(self, state , last_act_m, last_act_o):
