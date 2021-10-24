@@ -200,8 +200,8 @@ class OpponentLearning(Agent):
         self.me = me
         self.opponent = opp
 
-        csv_save = open('om_diff5.csv', 'w', encoding='UTF8', newline='')
-        self.writer = csv.writer(csv_save)
+        # csv_save = open('om_diff5.csv', 'w', encoding='UTF8', newline='')
+        # self.writer = csv.writer(csv_save)
 
     def decide(self, state , last_act_m, last_act_o):
 
@@ -249,9 +249,9 @@ class OpponentLearning(Agent):
         # print('lo' , last_act_o)
         #print('thingy  ',(1- self.learning_rate)*self.Q[prev_state,last_act_m,last_act_o] + self.learning_rate*(r + self.discount_factor*V_ns))
         
-        if last_act_o is None and last_act_m is None:
-            # print("here")
-            self.writer.writerow(['new game' , 'start'])
+        # if last_act_o is None and last_act_m is None:
+        #     # print("here")
+        #     self.writer.writerow(['new game' , 'start'])
 
         if last_act_o is not None and last_act_m is not None:
             # print('p0')
@@ -365,10 +365,10 @@ class OpponentLearning(Agent):
         rand_i = np.random.choice(np.flatnonzero(act_vals == act_vals.max()))
         # print('index ' ,rand_i)
         a_m = p1_act[rand_i]
-        # self.last_state = state        
-        self.writer.writerow(['last move' , last_act_o])
+        # # self.last_state = state        
+        # self.writer.writerow(['last move' , last_act_o])
 
-        self.writer.writerow(['next opp move   ' , pred , pred_p])
+        # self.writer.writerow(['next opp move   ' , pred , pred_p])
 
         # print('')
         # print('end')
