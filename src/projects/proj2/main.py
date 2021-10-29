@@ -42,7 +42,7 @@ def run_game(args):
     opponentlearning_agent = agent.OpponentLearning(
         evaluation_fn,
         learning_rate=0.5,
-        discount_factor=0.8,
+        discount_factor=0.3,
         me = 0,
         opp = 1
     )
