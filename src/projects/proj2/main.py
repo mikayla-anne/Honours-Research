@@ -61,6 +61,8 @@ def run_game(args):
         print('om mini')
         agents = [opponentlearning_agent, minimax_agent]
 
+    agents = [minimax_agent,minimax_agent]
+    print(agents)
     game = Game(gm.generator(), agents)
     # print(game)
     # g
