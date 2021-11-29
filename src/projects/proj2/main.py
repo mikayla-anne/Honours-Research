@@ -38,6 +38,12 @@ def run_game(args):
         args.ab_pruning,
         args.max_depth
     )
+    
+    minimax_agent1 = agent.MinimaxAgent(
+        evaluation_fn,
+        args.ab_pruning,
+        args.max_depth
+    )
 
     opponentlearning_agent = agent.OpponentLearning(
         evaluation_fn,
@@ -47,13 +53,13 @@ def run_game(args):
         opp = 1
     )
 
-    opponentlearning_agent2 = agent.OpponentLearning(
-        evaluation_fn,
-        learning_rate=0.5,
-        discount_factor=0.5,
-        me = 1,
-        opp = 0
-    )
+#     opponentlearning_agent2 = agent.OpponentLearning(
+#         evaluation_fn,
+#         learning_rate=0.5,
+#         discount_factor=0.5,
+#         me = 1,
+#         opp = 0
+#     )
     if args.minimini:
         print('minimini')
         agents = [minimax_agent,minimax_agent]
@@ -61,7 +67,7 @@ def run_game(args):
         print('om mini')
         agents = [opponentlearning_agent, minimax_agent]
 
-    agents = [minimax_agent,minimax_agent]
+    # agents = [minimax_agent,minimax_agent1]
     print(agents)
     game = Game(gm.generator(), agents)
     # print(game)

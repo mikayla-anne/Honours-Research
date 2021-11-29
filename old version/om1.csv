@@ -1,0 +1,1899 @@
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,Action.KICK
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,Action.KICK
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, -1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.08333333333333333
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.08333333333333333
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.08333333333333333
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.08333333333333333
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.05
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.05
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.05
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.05
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.3333333333333333
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.6666666666666666
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.6666666666666666
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.041666666666666664
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+last move,Action.KICK
+next opp move   ,Action.KICK,1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.6666666666666666
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.6666666666666666
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.5
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.7777777777777778
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",0.7777777777777778
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.3333333333333333
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,Action.KICK,0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.5
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+new game,start
+last move,
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",0.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, 1)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, 1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, 0, 1)",1.0
+new game,start
+last move,
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,,-1
+last move,"(<Action.MOVE: 2>, 0, -1)"
+next opp move   ,"(<Action.MOVE: 2>, 1, 0)",1.0
+last move,"(<Action.MOVE: 2>, -1, 0)"
+next opp move   ,"(<Action.MOVE: 2>, -1, 0)",1.0

@@ -57,13 +57,14 @@ class Game:
         self.agents = list(agents)
         self.display = display
         if display:
+            time.sleep(10)
             pygame.init()
             self.screen = pygame.display.set_mode((672, 480))
 
     def run(self, play_again='query', speed=2):
         # print('in run')
 
-        num_games = 5000
+        num_games = 1000
 
         csv_save = open('savingprobsg_df4.csv', 'w', encoding='UTF8', newline='')
         writer = csv.writer(csv_save)
